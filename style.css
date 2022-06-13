@@ -1,0 +1,389 @@
+/* No Padding, Margin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    margin-top: 120px;
+    /* margin: 30px 0px; you have to remove position : fixed and top : 0 FROM class head below to get rid of fixed NAV */
+    font-size: 4em;
+}
+.small_txt1 {
+    margin: 40px 0px; /* Don't forget to remove this line as well to get rid of fixed */
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Making Bold Style */
+
+.ios {
+    font-weight: bold;
+}
+.ipad {
+    font-weight: bold;
+}
+.watch {
+    font-weight: bold;
+}
+.tv {
+    font-weight: bold;
+}
+.mac {
+    font-weight: bold;
+}
+
+/* Each Line Of Products */
+
+.content-1 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0px;
+}
+.content-2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0px;
+}
+.content-3 {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0px;
+}
+
+/* Each Product Indentation */
+
+.ios ul li {
+    list-style: none;
+    padding-left: 60px;
+}
+.ipad ul li {
+    list-style: none;
+    padding-left: 60px;
+}
+.watch ul li {
+    list-style: none;
+    padding-left: 112px;
+}
+.tv ul li {
+    list-style: none;
+    padding-left: 60px;
+}
+.mac ul li {
+    list-style: none;
+    padding-left: 110px;
+}
+
+/* Aligning Images Under Operating Sytem */
+
+.ios-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ipad-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.watch-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tv-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mac-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Each Image Margin */
+
+.ios-header img {
+    margin: 25px 0px;
+}
+.ipad-header img {
+    margin: 25px 0px;
+}
+.watch-header img {
+    margin: 25px 0px;
+}
+.tv-header img {
+    margin: 25px 0px;
+}
+.mac-header img {
+    margin: 25px 0px;
+}
+
+/* Donation Section */
+
+.content-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0px;
+}
+.container {
+    width: 650px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    border-radius: 60px;
+}
+.small_txt2 font {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.help {
+    margin-top: 120px;
+    font-size: 2rem;
+    color: white;
+}
+.dono {
+    color: rgb(180, 180, 180);
+}
+.beta_profile {
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+}
+.beta_profile:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.25s ease-in;
+}
+.btn {
+    display: flex;
+    width: 444px;
+    justify-content: space-evenly;
+    margin-top: 6px;
+    margin-bottom: 15px;
+}
+.ori-btn {
+    padding: 10px 12px;
+    font-size: 15px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 120px;
+}
+.pay {
+    margin-left: 100px;
+    border: none;
+    background-color: #1F404F;
+    color: #239CD4;
+}
+.coffee {
+    margin-right: 100px;
+    border: none;
+    background-color: #4A2C2C;
+    color: #F76362;
+}
+.pay:hover {
+    background-color: #239CD4;
+    color: white;
+    transition: 0.2s ease-out;
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 11px;
+    
+}
+.coffee:hover {
+    background-color: #F76362;
+    color: white;
+    transition: 0.2s ease-out;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 11px;   
+}
+/* THE HEADER NAV */
+.head {
+    width: 1900px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    position: fixed; /*Remove these 2 lines if you wanna remove fixed NAV */
+    top: 0;
+}
+.head_content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.head_content_left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head_content_right {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.head_content_right .nav-img {
+    width: 20px;
+}
+.left-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.left-main h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.cash-in {
+    text-decoration: none;
+    color: #E4488C;
+    background-color: rgba(0, 247, 255, 0);
+    padding: 10px 25px;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+.cash-in:hover {
+    background-color: rgba(0, 247, 255, 0.180);
+    padding: 10px 25px;
+    border-radius: 2rem;
+    font-weight: bolder;
+    transition: 0.15s ease-out;
+}
+.nav-link {
+    background-color: rgba(0, 242, 255, 0);
+    padding: 7px 10px;
+    margin: 10px;
+    border-radius: 100%;
+}
+.nav-link:hover {
+    background-color: rgba(0, 242, 255, 0.180);
+    transition: 0.15s ease-out;
+}
+.main-logo {
+    width: 35px;
+}
+.main-logo:hover {
+    filter: brightness(2);
+    transition: 0.2s ease-out;
+}
+.main-link1 {
+    padding: 3px 5px;
+    border-radius: 1rem;
+}
+/* THE FOOTER */
+.foot {
+    width: 1900px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.foot_content {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.first-line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.second-line {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.in_short {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.contact-2 {
+    display: flex;
+    justify-content: center;
+}
+.three-line {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot img {
+    width: 35px;
+}
+.three-line ul a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(114, 114, 114)
+}
+.three-line h4 {
+    margin-top: 25px;
+    color: white;
+}
+.in_short p {
+    color: white;
+}
+.main-log {
+    margin-top: 25px;
+    margin-left: 0px;
+    filter: brightness(2);
+}
+.media-link {
+    margin: 0px 40px;
+}
+
+.underline {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+.info p {
+    color: white;
+}
+.policy li a {
+    text-decoration: none;
+    color: white;
+}
+.policy {
+    display: flex;
+
+}
+.policy li {
+    margin: 0px 20px;
+    list-style: none;
+}
+.affiliate p {
+    color: white;
+    font-size: 0.7rem;
+    margin: 8px 0px 20px 20px;
+}
+.three-line ul a:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease-out;
+}
